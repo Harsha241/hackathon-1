@@ -1,22 +1,148 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div><h1>Login in as Volunteers
-    </h1></div>
-    <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="d5875d43-c430-4017-bea1-bbd7638ac463">
-        <label>Name:</label>
-        <input type="name" name="name" required/><br><br>
-        <label>Email:</label>
-        <input type="email" name="email" required/><br><br>
-        <label>Number:</label>
-        <input type="number" name="number" required/><br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Volunteer</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #eef2f3;
+        color: #333;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      .form-container h1 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #6f42c1; /* Purple color for the header */
+      }
+
+      .form-container label {
+        display: block;
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .form-container input {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .form-container button {
+        background: linear-gradient(
+          90deg,
+          #6f42c1,
+          #b28dfa
+        ); /* Purple gradient for the button */
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .form-container button:hover {
+        background: linear-gradient(
+          90deg,
+          #4e2c8f,
+          #8c6dc7
+        ); /* Darker purple gradient on hover */
+      }
+
+      .form-container p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      @media (max-width: 768px) {
+        .form-container {
+          padding: 1.5rem;
+        }
+
+        .form-container h1 {
+          font-size: 1.5rem;
+        }
+
+        .form-container button {
+          font-size: 0.9rem;
+          padding: 0.7rem 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Register Volunteer</h1>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="d5875d43-c430-4017-bea1-bbd7638ac463"
+        />
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="number">Number</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Enter your contact number"
+          required
+        />
+
         <button type="submit">Submit</button>
-    </form>
-</body>
+      </form>
+      <p>&copy; 2024 Volunteer Platform. All Rights Reserved.</p>
+    </div>
+  </body>
 </html>
