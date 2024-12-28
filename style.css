@@ -43,7 +43,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #333;
+    color: #b31e1e;
 }
 
 /* Hero Section */
@@ -94,10 +94,11 @@ body {
 
 .button {
     display: inline-block;
-    background-color: #8B5CF6;
-    color: white;
+    background-color: #8658f1;
+    color: rgb(210, 122, 122);
     padding: 0.75rem 1.5rem;
     border-radius: 0.375rem;
+    width:250px;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.2s;
@@ -322,4 +323,97 @@ body {
     text-align: center;
     color: #666;
     font-size: 0.875rem;
+}
+
+
+.contact-us {
+    max-width: 500px;
+    width: 90%;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-header {
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.contact-content {
+    margin-top: 20px;
+}
+
+.contact-email {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+.carousel-image {
+    object-fit: contain; /* Ensures images fit within the carousel item without being cropped */
+    height: 300px; /* Set a fixed height or adjust as needed */
+    width: 100%;
+}
+
+
+
+.carousel-caption h5 {
+    font-size: 1.5rem; /* Adjust the font size as per your design */
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.125rem; /* Adjust the font size as per your design */
+}
+
+/* Ensure carousel responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+.carousel-control-prev-custom,
+.carousel-control-next-custom {
+    background-color: #cb08f2; /* Change to any color you like */
+    border-radius: 50%;  /* Optional: to make the buttons round */
+}
+
+.carousel-control-prev-custom .carousel-control-prev-icon,
+.carousel-control-next-custom .carousel-control-next-icon {
+    background-color: rgb(219, 51, 248); /* Icon color */
+}
+
+.carousel-control-prev-custom:hover,
+.carousel-control-next-custom:hover {
+    background-color: #d81eed; /* Darker shade on hover */
 }
